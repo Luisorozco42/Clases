@@ -1,6 +1,8 @@
+import aritmetica.Aritmetica;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-void main() {
+void main(String[] args) {
     //Cabe a destacar que tecnicamente estoy reaalizando todos estos ejercios como practica
     //o como reeforzamiento de lo que he aprrendido mucho tiempo atras, ademas de ver las nuevas sintaxis
 
@@ -29,8 +31,8 @@ void main() {
 
     Aritmetica aritmetica1 = new Aritmetica();//al crear esto se ejecuta el constructor
 
-    aritmetica1.operando1 = 5;
-    aritmetica1.operando2 = 7;
+    aritmetica1.setOperando1(5);
+    aritmetica1.setOperando2(7);
     aritmetica1.sumar();
     aritmetica1.restar();
 }
