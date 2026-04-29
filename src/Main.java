@@ -1,4 +1,5 @@
 import aritmetica.Aritmetica;
+import com.sun.nio.sctp.PeerAddressChangeNotification;
 import herencia.Animal;
 import persona.Persona;
 
@@ -42,4 +43,12 @@ void main(String[] args) {
 
     //Animal animal1 = new Animal();
     //animal1.dormir(); no se puede acceder por la palabra reservada protected
+    System.out.println("Variable estatica: " + Persona.getContadorPersona());//recordemos que para poder usarlos fuera del paquete es necesario tenerlo en public
+    var objeto1 = new Persona("Luis", "Orozco", "lorozcolazo@gmail.com", "51544156");
+    System.out.println(objeto1);//comportamiento por default es el toString()
+    System.out.println("Variable estatica: " + Persona.getContadorPersona());
+    //segundo objeto
+    var objeto2 = new Persona("Ian", "Gomez","ian.gomez@gmail.com","56178528");
+    System.out.println(objeto2);
+    System.out.println("Variable estatica: " + Persona.getContadorPersona());// Es posble acceder desde objeeto.contadorPersona pero la buena practica es acceder desde la clase en si
 }
