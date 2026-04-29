@@ -1,31 +1,33 @@
 import aritmetica.Aritmetica;
+import herencia.Animal;
+import persona.Persona;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+
 void main(String[] args) {
-    //Cabe a destacar que tecnicamente estoy reaalizando todos estos ejercios como practica
-    //o como reeforzamiento de lo que he aprrendido mucho tiempo atras, ademas de ver las nuevas sintaxis
+    //Cabe a destacar que técnicamente estoy realizando todos estos ejercicios como práctica
+    //o como reforzamiento de lo que he aprendido mucho tiempo atrás, además de ver las nuevas sintaxis
 
-    //Por cierto el curso en este momento esta apenas mostrando los constructores para poder acceder
+    //Por cierto el curso en este momento está apenas mostrando los constructores para poder acceder
     //desde otras clases asi que ese cambio no se mirara en este repositorio
 
-    System.out.println("*** Creacion de clases y objetos ***");
+    /*
+    System.out.println("*** Creación de clases y objetos ***");
     Persona luis = new Persona();
 
-    luis.nombre = "Luis";
-    luis.apellido = "Orozco";
-    luis.email = "lorozcolazo@gmail.com";
-    // numero generico
-    luis.celular = "78958212";
+    luis.setNombre("Luis");
+    luis.setApellido("Orozco");
+    luis.setEmail("lorozcolazo@gmail.com");
+    // número genérico
+    luis.setCelular("78958212");
     luis.mostrarPersona();
 
     System.out.println();
     Persona juan = new Persona();
 
-    juan.nombre = "Juan";
-    juan.apellido = "Gutierrez";
-    juan.email = "juan.gutierrez@gmail.com";
-    juan.celular = "54821485";
+    juan.setNombre("Juan");
+    juan.setApellido("Gutierrez");
+    juan.setEmail("juan.gutierrez@gmail.com");
+    juan.setCelular("54821485"); //también número genérico
     juan.mostrarPersona();
     System.out.println();
 
@@ -35,4 +37,9 @@ void main(String[] args) {
     aritmetica1.setOperando2(7);
     aritmetica1.sumar();
     aritmetica1.restar();
+
+    */
+
+    //Animal animal1 = new Animal();
+    //animal1.dormir(); no se puede acceder por la palabra reservada protected
 }
