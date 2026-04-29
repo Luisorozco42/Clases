@@ -4,8 +4,9 @@ public class Perro extends Animal{
 
     public Perro() {}
 
-    public void hacerSonido(){
-        System.out.println("Puedo ladrar");
+    @Override
+    protected void hacerSonido(){
+        System.out.println("El perro hace wauf");
     }
 
     //en mis tiempos había que poner un @override
